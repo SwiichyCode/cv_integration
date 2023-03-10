@@ -1,0 +1,68 @@
+@import "reset.scss";
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #595959;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(595px * 2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 6.9rem 2.4rem;
+  margin: auto;
+  background: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-family: "Space Mono", monospace;
+
+    h1 {
+      font-weight: 700;
+      font-size: 4.5rem;
+      color: var(--black);
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 2.6rem;
+      color: var(--grey);
+    }
+  }
+
+  .right-side {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-weight: 400;
+      font-size: 1.6rem;
+      gap: 1.2rem;
+
+      a {
+        color: rgba(138, 138, 138, 0.9);
+        text-decoration: none;
+      }
+
+      li:nth-child(1) a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Space Mono', monospace;
